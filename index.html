@@ -15,7 +15,7 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
-
+  <meta name="mobile-web-app-capable" content="yes">
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
@@ -28,6 +28,23 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- ✅ Firebase Web SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyD8nbNh8DhWxpn-uno5zt1rn8iKrz59O1A",
+        authDomain: "bhagyoday-studio.firebaseapp.com",
+        projectId: "bhagyoday-studio",
+        storageBucket: "bhagyoday-studio.firebasestorage.app",
+        messagingSenderId: "973247340654",
+        appId: "1:973247340654:web:305dbbbb2a905c133fc67f"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
 
   <title>bhagyoday_studio</title>
   <link rel="manifest" href="manifest.json">
